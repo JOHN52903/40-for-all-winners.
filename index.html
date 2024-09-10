@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game.</title>
+</head>
+<body style="background-color: azure;">
+    <h3> <marquee style="background-color: blueviolet; padding: 10px; margin-top: -20px;" behavior="" direction="left">Welcome to number guessing game.</marquee></h3>
+    <div style="background-color: azure;" align="center">
+        <h2>Welcome to number guessing game.</h2>
+        <h4>You only have one Attempt.</h4>
+
+        <div>
+            <input style="width: 150px; height: 45px; border-radius: 10px;" type="number" placeholder="Guess a number from 1-50" id="input" required autofocus value="value"> 
+            <button onclick="checkGuess()" style="width: 150px; height: 50px; background-color: green; color: white; border-radius: 10px;">Click here to Guess</button>
+        </div>
+
+        <br>
+        <div id="displayResults"></div>
+    </div>
+
+    
+    
+
+    <script>
+        // console.log(displayResults.innerText);
+
+        function checkGuess(){
+            var correctNumber = ('4', '8', '10', '30', '36', '40' );
+            var yourGuess = input.value;
+            
+            if (correctNumber.includes(yourGuess)) {
+                displayResults.innerText = 'Congratulations you correct.'
+            } else {
+                displayResults.innerText = 'You no get sense.'
+            } 
+        }
+
+
+    </script> 
+</body>
+</html>
